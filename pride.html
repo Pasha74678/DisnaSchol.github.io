@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гордость школы - Дисненская СШ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ---------- Верхняя панель ---------- -->
+    <header class="top-bar">
+        <div class="container">
+            <span class="site-title">НЕ официальный сайт Дисненской средней школы</span>
+            <div class="top-bar-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+                    <span class="theme-icon">☾</span>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---------- Выдвижная панель (сайдбар) ---------- -->
+    <aside id="drawer" class="drawer">
+        <nav class="drawer-nav">
+            <a href="index.html" class="drawer-link">Главная</a>
+            <a href="forum.html" class="drawer-link">Форум</a>
+            <a href="pride.html" class="drawer-link">Гордость</a>
+            <a href="news.html" class="drawer-link">Новости</a>
+        </nav>
+        <div class="drawer-footer">
+            <button id="theme-toggle-drawer" class="theme-toggle" aria-label="Переключить тему">
+                <span class="theme-icon">☾</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- ---------- Основное содержимое ---------- -->
+    <main class="container">
+        <section class="hero">
+            <h1>Гордость школы</h1>
+            <p>Знакомьтесь с нашими лучшими учителями, учениками и выпускниками.</p>
+        </section>
+
+        <section class="pride">
+            <div class="cards-grid">
+                <div class="card" data-person="teacher-1">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/teacher1/300/200.jpg" alt="Название учителя">
+                    </div>
+                    <div class="card-content">
+                        <h3>Иванова Мария Петровна</h3>
+                        <p class="role">Учитель математики</p>
+                        <p class="description">Стаж по математике 15 лет, победитель олимпиадных команд</p>
+                        <button class="btn-card">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card" data-person="student-1">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/student1/300/200.jpg" alt="Название студента">
+                    </div>
+                    <div class="card-content">
+                        <h3>Петров Андрей</h3>
+                        <p class="role">Студент</p>
+                        <p class="description">Победитель в всероссийской олимпиаде по математике</p>
+                        <button class="btn-card">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card" data-person="alumni-1">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/alumni1/300/200.jpg" alt="Название выпускника">
+                    </div>
+                    <div class="card-content">
+                        <h3>Сидорова Елена</h3>
+                        <p class="role">Выпускник</p>
+                        <p class="description">Разработчик игр, создатель образовательных приложений</p>
+                        <button class="btn-card">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ---------- Подвал ---------- -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Дисненская средняя школа. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
