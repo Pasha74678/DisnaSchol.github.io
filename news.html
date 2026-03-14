@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Дисненская СШ</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Применяем тему сразу, без моргания
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- ---------- Верхняя панель ---------- -->
+    <header class="top-bar">
+        <div class="container">
+            <span class="site-title">НЕ официальный сайт Дисненской средней школы</span>
+            <div class="top-bar-right">
+                <a href="profile.html" class="top-bar-avatar" id="top-bar-avatar" title="Мой профиль">
+                    <div class="avatar-small" id="top-bar-avatar-img"></div>
+                </a>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---------- Выдвижная панель (сайдбар) ---------- -->
+    <aside id="drawer" class="drawer">
+        <button class="drawer-close" id="drawer-close" aria-label="Закрыть меню">&times;</button>
+        <nav class="drawer-nav">
+            <a href="index.html" class="drawer-link">Главная</a>
+            <a href="forum.html" class="drawer-link">Форум</a>
+            <a href="pride.html" class="drawer-link">Гордость</a>
+            <a href="news.html" class="drawer-link">Новости</a>
+            <a href="profile.html" class="drawer-link">Профиль</a>
+        </nav>
+        <div class="drawer-footer">
+            <button id="theme-toggle-drawer" class="theme-toggle" aria-label="Переключить тему">
+                <span class="theme-icon">☾</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- ---------- Основное содержимое ---------- -->
+    <main class="container">
+        <section class="hero">
+            <h1>Новости школы</h1>
+            <p>Будьте в курсе последних событий и новостей Дисненской средней школы.</p>
+        </section>
+
+        <section class="news">
+            <div class="news-list">
+                <article class="news-item">
+                    <h3>🏆 Победа на городской олимпиаде по математике</h3>
+                    <p>Наши ученики заняли первые три места на городской олимпиаде по математике. Это большое достижение для нашей школы! Особенно отличились Илья Высоцкий и Мария Ковальчук, которые теперь будут представлять город на республиканском этапе.</p>
+                    <a href="#" class="btn-link">Читать далее</a>
+                </article>
+                
+                <article class="news-item">
+                    <h3>🏃 Новый спортивный зал</h3>
+                    <p>В школе открылся современный спортивный зал с новым оборудованием. Теперь у учеников есть все условия для занятий физкультурой. В зале установлены тренажеры, игровые площадки и зона для йоги. Открытие прошло с участием известных спортсменов региона.</p>
+                    <a href="#" class="btn-link">Читать далее</a>
+                </article>
+                
+                <article class="news-item">
+                    <h3>🎓 День открытых дверей</h3>
+                    <p>Приглашаем всех родителей и будущих учеников на День открытых дверей, который состоится 15 марта. В программе: экскурсии по школе, мастер-классы от учителей, презентация учебных программ и общение с действующими учениками.</p>
+                    <a href="#" class="btn-link">Читать далее</a>
+                </article>
+                
+                <article class="news-item">
+                    <h3>💻 IT-хакатон "Школьные технологии"</h3>
+                    <p>Команда наших программистов под руководством Елены Смирновой заняла второе место на республиканском IT-хакатоне. Они представили приложение для организации учебного процесса, которое уже внедряется в школе.</p>
+                    <a href="#" class="btn-link">Читать далее</a>
+                </article>
+                
+                <article class="news-item">
+                    <h3>🌱 Экологическая акция "Чистый город"</h3>
+                    <p>Ученики 8-11 классов приняли участие в экологической акции. За один день было собрано более 200 кг вторсырья. Акция получила широкий отклик в городе, и мэр пообещал поддержать регулярные субботники.</p>
+                    <a href="#" class="btn-link">Читать далее</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ---------- Подвал ---------- -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Дисненская средняя школа. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
